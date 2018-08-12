@@ -10,7 +10,7 @@ const ToDoo = ({data}) => {
             <ul>
                 {/* {console.log(this.props)} */}
                {/* {arr.map(el =>  />)} */}
-               {data.map(el => <li className='list' key={el.id} id={el.id}>{el.text}<ToDooList/></li>)}
+               {data.map(el => <li className='list' key={el.id} >{el.text}<ToDooList id={el.id}/></li>)}
             </ul>
         </div>
     );

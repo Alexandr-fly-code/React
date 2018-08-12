@@ -5,6 +5,8 @@ export default function inputReducers (state = initialMass, action){
         return [action.data, ...state]
         case 'DELETE_ITEMS':
         return state.filter(el => el.id !== action.itemsId)
+        // case 'ADD_ITEMS':
+        // return state.map(el => el[data.boll])
         default: return state;
     }
 }

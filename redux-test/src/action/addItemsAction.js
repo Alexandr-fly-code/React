@@ -3,7 +3,9 @@ export const addItems = (text) => ({
     data: {
         id: Date.now(),
         text: text,
-    }
+        boll: false,
+    },
+    
     
 })
 
