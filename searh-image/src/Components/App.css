@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: tomato; */
+}
+.wrapper {
+    width: 50%;
+    margin: auto;
+    background-color: rgb(238, 223, 12);
+}
+.form {
+    width: 100%;
+    text-align: center;
+    
+}
+.input {
+    width: 90%;
+    height: 3rem;
+}
+.btn {
+    /* display: block; */
+    width: 10%;
+    height: 3rem;
+}
+.container {
+    display: flex;
+}
+
+.container-category {
+    flex-basis: 20%;
+}

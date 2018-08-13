@@ -62,7 +62,7 @@ class App extends Component {
     render() {
         // const {inputValue, mass} = this.state;
         // console.log(object);
-        // console.log(this.props.arr);
+        console.log(this.props);
         return (
             <div className='container'>
                 <form onSubmit={this.eventSubmit}>
@@ -81,6 +81,7 @@ App.propTypes = {
 function mSTP (store){
     return {
         inputText: store.text,
+        mass: store.mass,
     }
 }
 

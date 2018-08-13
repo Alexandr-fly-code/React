@@ -1,0 +1,9 @@
+.category {
+    display: flex;
+    flex-direction: column;
+}
+.btn-category {
+    /* width: 50%; */
+    height: 4rem;
+
+}

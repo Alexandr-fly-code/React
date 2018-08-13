@@ -86,11 +86,11 @@ function mSTP (store) {
 
 function mSDP (dispatch) {
     return {
-        prevMonth: function (today){
-            dispatch(prevMonth(today))
+        prevMonth: function (){
+            dispatch(prevMonth())
         },
-        nextMonth: function (today) {
-            dispatch(nextMonth(today))
+        nextMonth: function () {
+            dispatch(nextMonth())
         }
     }
 }

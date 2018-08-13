@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './Counter.css';
 import { connect } from 'react-redux';
-import {add, dec, reset} from './action/counterAction';
+import {add, dec, reset, inAsync} from './action/counterAction';
+import { galleryAsync } from './action/galleryAction';
 
 class Counter extends Component {
 
@@ -10,6 +11,10 @@ class Counter extends Component {
     // state = {
     //     counter: 0,
     // }
+
+    rise = () => {
+        this.props.inAsync(3);
+    }
 
     // add = () => {
     //     this.setState(prev => ({
@@ -36,7 +41,7 @@ class Counter extends Component {
                 <h1>{this.props.counter}</h1>
                 <button onClick={this.props.decrement}>-</button>
                 <button onClick={this.props.reset}>reset</button>
-                <button onClick={this.props.increment}>+</button>
+                <button onClick={this.props.galleryAsync}>+</button>
             </div>
         );
     }
@@ -58,6 +63,12 @@ function mapDicpatchToProps (dispatch) {
         },
         reset: function () {
             dispatch(reset())
+        },
+        inAsync: function (number) {
+            dispatch(inAsync(number))
+        },
+        galleryAsync: function () {
+            dispatch(galleryAsync())
         }
     }
 }

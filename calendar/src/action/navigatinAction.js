@@ -1,9 +1,7 @@
-export const nextMonth = (today) => ({
+export const nextMonth = () => ({
     type: 'NEXT',
-    today,
 })
 
-export const prevMonth = (today) => ({
+export const prevMonth = () => ({
     type: 'PREV',
-    today,
 })
